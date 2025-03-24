@@ -1,0 +1,10 @@
+torch
+torchvision
+matplotlib
+seaborn
+tensorboard
+plotly
+pandas
+scikit-learn
+tqdm
+opencv-python
