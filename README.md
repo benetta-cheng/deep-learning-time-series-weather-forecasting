@@ -46,7 +46,7 @@ Accurate weather forecasting plays a critical role in supporting urban planning,
 - Models training process for all architectures are placed under [Models training](https://github.com/LouisAnhTran/deep_learning_models_for_time_series_data/tree/main/models_training)
 - Models Pytorch weights for reproducibility are placed under  [Models Weight for reproducibility](https://github.com/LouisAnhTran/deep_learning_models_for_time_series_data/tree/main/models_weights_storage)
 - Figures for Loss curve during model training are placed under [Loss curves during training](https://github.com/LouisAnhTran/deep_learning_models_for_time_series_data/tree/main/images_model_training_and_eval)
-- Prompt templates are defined under [Prompt Templates](https://github.com/LouisAnhTran/llm-powered-contextual-search-and-summarization-backend/blob/main/src/gen_ai/rag/prompt_template.py)
+- Model architectures are defined and placed under [Model architectures definition](https://github.com/LouisAnhTran/deep_learning_models_for_time_series_data/tree/main/model_architecture_definition)
 - All constant variables needed to run the application are defined under [Configurations](https://github.com/LouisAnhTran/llm-powered-contextual-search-and-summarization-backend/blob/main/src/config.py)
 
 ## Built With
