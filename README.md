@@ -98,6 +98,26 @@ pip install -r requirements.txt
 ```
 
 
+## How to Navigate the Project Codebase (Recommended Order)
+
+1. **`VizData_Notebook.ipynb`** – Provides in-depth exploration and analysis of the dataset, including statistics, size, number of features, distributions, and key properties.
+
+2. **`config/config_LSTM.py`** – Contains all hyperparameters required to train the model using the LSTM architecture. Feel free to modify any parameter as needed.
+
+3. **`models_training/seq2seq_autoregressive_LSTM_final.ipynb`** – Includes detailed steps for training a model from scratch using the training set, as well as evaluation on the test set. This notebook also saves the PyTorch model weights and training loss curves for reference.
+
+4. **`images_model_training_and_eval/`** – Stores all training loss curve plots. Choose the image that corresponds to the model you are working with.
+
+5. **`models_weights_storage/`** – Contains the trained PyTorch model weights.
+
+6. **`model_architecture_definition/`** – Includes the Python classes that define model architectures. If you modify a model’s structure in a notebook, make sure to update the corresponding class here.
+
+7. **`Conso_VizEval_Notebook.ipynb`** – Contains the code to reproduce results using model saved weights, visualize training loss curves, and evaluate model performance for all models. It also includes comparative analysis across all trained models and architectures.
+
+**`Note`**: As this project explores diverse model architectures, the flow above is exemplified using the Seq2Seq LSTM model. However, the same structure applies to other model architectures as well. You can follow the same described flow to explore and evaluate any of the implemented models.
+
+
+
 <!-- ACKNOWLEDGMENTS -->
 ## References:
 
