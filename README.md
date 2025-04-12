@@ -43,11 +43,13 @@ Accurate weather forecasting plays a critical role in supporting urban planning,
 
 ## Main components:
 
-- Models training process for all architectures are placed under [Models training](https://github.com/LouisAnhTran/deep_learning_models_for_time_series_data/tree/main/models_training)
+- Models training detailed process and steps for all architectures are placed under [Models training](https://github.com/LouisAnhTran/deep_learning_models_for_time_series_data/tree/main/models_training)
+- Models performance evaluation and comparision are consolidated and placed under  [Consolidated models evaluation and comparison](https://github.com/LouisAnhTran/deep_learning_models_for_time_series_data/blob/main/Conso_VizEval_Notebook.ipynb)
 - Models Pytorch weights for reproducibility are placed under  [Models Weight for reproducibility](https://github.com/LouisAnhTran/deep_learning_models_for_time_series_data/tree/main/models_weights_storage)
 - Figures for Loss curve during model training are placed under [Loss curves during training](https://github.com/LouisAnhTran/deep_learning_models_for_time_series_data/tree/main/images_model_training_and_eval)
 - Model architectures are defined and placed under [Model architectures definition](https://github.com/LouisAnhTran/deep_learning_models_for_time_series_data/tree/main/model_architecture_definition)
-- All constant variables needed to run the application are defined under [Configurations](https://github.com/LouisAnhTran/llm-powered-contextual-search-and-summarization-backend/blob/main/src/config.py)
+- Hyperparameters for all model architectures are placed under [Configurations](https://github.com/LouisAnhTran/deep_learning_models_for_time_series_data/tree/main/config)
+- Helper functions are defined and placed under [Helpers functions](https://github.com/LouisAnhTran/deep_learning_models_for_time_series_data/tree/main/utils)
 
 ## Built With
 
