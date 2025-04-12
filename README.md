@@ -9,7 +9,7 @@
 <!-- Logo of website -->
 <div align="center">
 
-  <img src="https://effvision.com/wp-content/uploads/2024/06/artificial-intelligence-new-technology-science-futuristic-abstract-human-brain-ai-technology-cpu-central-processor-unit-chipset-big-data-machine-learning-cyber-mind-domination-generative-ai-scaled-1.jpg" width="500">
+  <img src="https://miro.medium.com/v2/resize:fit:1000/1*yrgbW7GvOcp94f-5HZcmyQ.jpeg" width="500">
 
 </div>
 
@@ -25,9 +25,29 @@
 Deep Learning Models for Time Series Data using Seq2Seq RNN and Transformer
 </h2>
 
-## About The Application :
+## Project Overview :
 
 Accurate weather forecasting plays a critical role in supporting urban planning, agriculture, public health, disaster preparedness, and transportation systems—particularly in highly populated cities like Delhi. However, the inherently dynamic and complex nature of weather patterns, influenced by both natural phenomena and human activities, makes precise forecasting a challenging task. In this project, we aim to improve the accuracy of short-term weather prediction in Delhi using deep learning. We train and evaluate multiple architectures, including a Seq2Seq RNN model, a Transformer-based model, and pre-trained time series models, on daily weather data collected between January 1, 2013, and April 24, 2017. The dataset includes four key features: average temperature, humidity, wind speed, and average air pressure. These models are used to predict future values of the four variables over the following months. Their performance is evaluated by comparing predictions to real recorded values, allowing us to assess model accuracy and robustness. The goal is to develop a reliable weather forecasting tool that can aid households, organizations, and government authorities in proactive decision-making and risk mitigation.
+
+## Model Architectures:
+
+- [x] **Seq2Seq auto-regressive** Recurrent Neural Network using **Long Short-Term Memory (LSTM)**, implemented from scratch  
+- [x] **Seq2Seq non-auto-regressive** Recurrent Neural Network using **Long Short-Term Memory (LSTM)**, implemented from scratch  
+- [x] **Seq2Seq auto-regressive** Recurrent Neural Network using **Gated Recurrent Unit (GRU)**, implemented from scratch  
+- [x] **Seq2Seq non-auto-regressive** Recurrent Neural Network using **Gated Recurrent Unit (GRU)**, implemented from scratch  
+- [x] **Recurrent Neural Network** with **Transformer** architecture  
+- [x] **Fine-tuned** state-of-the-art **pre-trained models** using transfer learning  
+
+
+
+
+## Main components:
+
+- Models training process for all architectures are placed under [Models training](https://github.com/LouisAnhTran/deep_learning_models_for_time_series_data/tree/main/models_training)
+- Models Pytorch weights for reproducibility are placed under  [Models Weight for reproducibility](https://github.com/LouisAnhTran/deep_learning_models_for_time_series_data/tree/main/models_weights_storage)
+- Figures for Loss curve during model training are placed under [Loss curves during training](https://github.com/LouisAnhTran/deep_learning_models_for_time_series_data/tree/main/images_model_training_and_eval)
+- Prompt templates are defined under [Prompt Templates](https://github.com/LouisAnhTran/llm-powered-contextual-search-and-summarization-backend/blob/main/src/gen_ai/rag/prompt_template.py)
+- All constant variables needed to run the application are defined under [Configurations](https://github.com/LouisAnhTran/llm-powered-contextual-search-and-summarization-backend/blob/main/src/config.py)
 
 ## Built With
 
@@ -44,13 +64,6 @@ This section outlines the technologies and tools used to develop the application
 * Caching: Redis
 * Parsing large PDFs document: PyMuPDF
 
-## Main components:
-
-- API Endpoints are defined under [API Endpoints](https://github.com/LouisAnhTran/llm-powered-contextual-search-and-summarization-backend/blob/main/src/api/v1/app.py)
-- Document indexing pipeline is defined under [Document Indexing Pipeline](https://github.com/LouisAnhTran/llm-powered-contextual-search-and-summarization-backend/blob/main/src/gen_ai/rag/doc_processing.py)
-- Handling of LLM API calls and Chaining are managed and defined under [LLM API Calls + Chaining](https://github.com/LouisAnhTran/llm-powered-contextual-search-and-summarization-backend/blob/main/src/gen_ai/rag/chat_processing.py)
-- Prompt templates are defined under [Prompt Templates](https://github.com/LouisAnhTran/llm-powered-contextual-search-and-summarization-backend/blob/main/src/gen_ai/rag/prompt_template.py)
-- All constant variables needed to run the application are defined under [Configurations](https://github.com/LouisAnhTran/llm-powered-contextual-search-and-summarization-backend/blob/main/src/config.py)
 
 ## Application Demo:
 
