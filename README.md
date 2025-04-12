@@ -29,6 +29,12 @@ Deep Learning Models for Time Series Data using Seq2Seq RNN and Transformer
 
 Accurate weather forecasting plays a critical role in supporting urban planning, agriculture, public health, disaster preparedness, and transportation systems—particularly in highly populated cities like Delhi. However, the inherently dynamic and complex nature of weather patterns, influenced by both natural phenomena and human activities, makes precise forecasting a challenging task. In this project, we aim to improve the accuracy of short-term weather prediction in Delhi using deep learning. We train and evaluate multiple architectures, including a Seq2Seq RNN model, a Transformer-based model, and pre-trained time series models, on daily weather data collected between January 1, 2013, and April 24, 2017. The dataset includes four key features: average temperature, humidity, wind speed, and average air pressure. These models are used to predict future values of the four variables over the following months. Their performance is evaluated by comparing predictions to real recorded values, allowing us to assess model accuracy and robustness. The goal is to develop a reliable weather forecasting tool that can aid households, organizations, and government authorities in proactive decision-making and risk mitigation.
 
+## Contributors :
+
+- Louis Anh Tran
+- Shaoren Ong
+- Benetta Chang
+
 ## Model Architectures:
 
 - [x] **Seq2Seq auto-regressive** Recurrent Neural Network using **Long Short-Term Memory (LSTM)**, implemented from scratch  
@@ -40,6 +46,8 @@ Accurate weather forecasting plays a critical role in supporting urban planning,
 
 ## Main components:
 
+- Time series dataset for training and evaluation is placed under [Time series dataset](https://github.com/LouisAnhTran/deep_learning_models_for_time_series_data/tree/main/dataset)
+- Data exploration and visualization is placed under [Dataset exploration](https://github.com/LouisAnhTran/deep_learning_models_for_time_series_data/blob/main/VizData_Notebook.ipynb)
 - Models training detailed process and steps for all architectures are placed under [Models training](https://github.com/LouisAnhTran/deep_learning_models_for_time_series_data/tree/main/models_training)
 - Models performance evaluation and comparision are consolidated and placed under  [Consolidated models evaluation and comparison](https://github.com/LouisAnhTran/deep_learning_models_for_time_series_data/blob/main/Conso_VizEval_Notebook.ipynb)
 - Models Pytorch weights for reproducibility are placed under  [Models Weight for reproducibility](https://github.com/LouisAnhTran/deep_learning_models_for_time_series_data/tree/main/models_weights_storage)
@@ -64,6 +72,31 @@ This section outlines the packages used in the project
 - opencv-python
 
 Refer to [requirements.txt](https://github.com/LouisAnhTran/deep_learning_models_for_time_series_data/tree/main/models_training) file for your references
+
+### Getting started
+
+1. Clone the project repo:
+ 
+```
+git clone https://github.com/LouisAnhTran/deep_learning_models_for_time_series_data.git
+```
+ 
+2. Run the following commands to install required packages and set up virtual environment:
+
+```
+# Chang to project main directory
+cd deep_learning_models_for_time_series_data
+
+# Set up Python virtual environment
+python -m venv venv && source venv/bin/activate
+
+# Make sure PIP is up to date
+pip install -U pip wheel setuptools
+
+# Install required dependencies
+pip install -r requirements.txt
+```
+
 
 <!-- ACKNOWLEDGMENTS -->
 ## References:
