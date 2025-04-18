@@ -121,13 +121,7 @@ pip install -r requirements.txt
 <!-- ACKNOWLEDGMENTS -->
 ## References:
 
-- [FastAPI](https://fastapi.tiangolo.com/)
-
-- [Redis](https://redis.io/)
-
-- [Pipecone](https://www.pinecone.io/)
-
-- [Streamlit](https://streamlit.io/)
+- [Pytorch](https://pytorch.org/)
 
 
 
