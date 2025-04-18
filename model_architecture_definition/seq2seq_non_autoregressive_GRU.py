@@ -22,16 +22,19 @@ class EncoderGRU(nn.Module):
     def forward(self, input_seq):
         # input_seq: (seq_len, batch_size, input_size)
         output, hidden = self.gru(input_seq)
-        return hidden    
+        return hidden
+    
 
 class DecoderGRU(nn.Module):
     def __init__(self, hidden_size, feature_size, num_layers = 1, dropout = 0.0):
         super(DecoderGRU, self).__init__()
         self.hidden_size = hidden_size
         self.feature_size = feature_size # 4 features
+        self.num_layers = num_layers
 
         self.gru = nn.GRU(input_size=feature_size,
                           hidden_size=hidden_size,
+                          num_layers=num_layers,
                           dropout = dropout if num_layers > 1 else 0.0,
                           batch_first=False)
 
@@ -57,18 +60,22 @@ class DecoderGRU(nn.Module):
         return torch.cat(outputs, dim=0)  # shape: (output_length, batch_size, 4)
     
 class Seq2SeqGRU(nn.Module):
-    def __init__(self, hidden_size, feature_size, output_size, num_layers=1):
+    def __init__(self, hidden_size, feature_size, output_size, num_layers=1, dropout=0.0):
         super(Seq2SeqGRU, self).__init__()
 
         self.output_length = output_size
 
         self.encoder = EncoderGRU(input_size=feature_size, # 4 features
                                   hidden_size=hidden_size,
-                                  num_layers= num_layers)
+                                  num_layers= num_layers,
+                                  dropout=dropout)
 
         self.decoder = DecoderGRU(hidden_size=hidden_size,
                                   feature_size=feature_size,
-                                  num_layers=num_layers)  # 4 features
+                                  num_layers=num_layers,
+                                  dropout=dropout)  # 4 features
+        # self.encoder.apply(init_weights)
+        # self.decoder.apply(init_weights)
 
     def forward(self, inputs, outputs=None):
         """
