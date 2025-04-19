@@ -1,11 +1,3 @@
-![Contributors][contributors-shield]
-![Forks][forks-shield]
-![Stargazers][stars-shield]
-![Issues][issues-shield]
-[![LinkedIn][linkedin-shield]](https://www.linkedin.com/in/louisanhtran/)
-
-
-
 <!-- Logo of website -->
 <div align="center">
 
