@@ -16,7 +16,7 @@
 <!-- Introduction of project -->
 
 <div align="center">
-  
+
 # 50.039 Theory and Practice of Deep Learning
 
 </div>
@@ -33,16 +33,15 @@ Accurate weather forecasting plays a critical role in supporting urban planning,
 
 - Louis Anh Tran
 - Shaoren Ong
-- Benetta Chang
+- Benetta Cheng
 
 ## Model Architectures:
 
-- [x] **Seq2Seq auto-regressive** Recurrent Neural Network using **Long Short-Term Memory (LSTM)**, implemented from scratch  
-- [x] **Seq2Seq non-auto-regressive** Recurrent Neural Network using **Long Short-Term Memory (LSTM)**, implemented from scratch  
-- [x] **Seq2Seq auto-regressive** Recurrent Neural Network using **Gated Recurrent Unit (GRU)**, implemented from scratch  
-- [x] **Seq2Seq non-auto-regressive** Recurrent Neural Network using **Gated Recurrent Unit (GRU)**, implemented from scratch  
-- [x] **Recurrent Neural Network** with **Transformer** architecture  
-- [x] **Fine-tuned** state-of-the-art **pre-trained models** using transfer learning  
+- [x] **Seq2Seq auto-regressive** Recurrent Neural Network using **Long Short-Term Memory (LSTM)**
+- [x] **Seq2Seq non-auto-regressive** Recurrent Neural Network using **Long Short-Term Memory (LSTM)**
+- [x] **Seq2Seq auto-regressive** Recurrent Neural Network using **Gated Recurrent Unit (GRU)**
+- [x] **Seq2Seq non-auto-regressive** Recurrent Neural Network using **Gated Recurrent Unit (GRU)**
+- [x] **Seq2Seq Transformer** architecture
 
 ## Main components:
 
@@ -76,15 +75,15 @@ Refer to [requirements.txt](https://github.com/LouisAnhTran/deep_learning_models
 ### Getting started
 
 1. Clone the project repo:
- 
+
 ```
 git clone https://github.com/LouisAnhTran/deep_learning_models_for_time_series_data.git
 ```
- 
+
 2. Run the following commands to install required packages and set up virtual environment:
 
 ```
-# Chang to project main directory
+# Change to project main directory
 cd deep_learning_models_for_time_series_data
 
 # Set up Python virtual environment
